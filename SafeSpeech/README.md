@@ -115,9 +115,13 @@ $$\mathcal{L} = (\mathcal{L}_{mel} + \beta \mathcal{L}_{noise}) + \alpha (\mathc
 - SIM：clean 0.604 → SPEC 0.204（远低于克隆阈值 0.25）
 - 5 个 TTS 模型上一致有效（强迁移性）
 
+![表 1：不同保护方法在 5 个 TTS 模型上的对比](table1.png)
+
 ### 零样本场景（图 4）
 
 即便扰动只在 BERT-VITS2 上生成，迁移到 F5-TTS、XTTS、FishSpeech 等零样本模型上也有效（F5-TTS SIM 从 0.885 跌到 0.094）。
+
+![图 4：零样本场景下不同 TTS 模型的 SIM 对比](figure4.png)
 
 ### 用户研究
 
